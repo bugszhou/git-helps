@@ -1,0 +1,1 @@
+{"version":3,"file":"git-helps.es.js","sources":["../src/index.ts"],"sourcesContent":["export default function index() {\n  return \"git-helps\";\n}"],"names":[],"mappings":"SAAwB,KAAK;IAC3B,OAAO,WAAW,CAAC;AACrB;;;;"}

@@ -1,6 +1,6 @@
 {
     "name": "git-helps",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "git utils",
     "author": "bugs_zhou",
     "main": "dist/git-helps.min.js",

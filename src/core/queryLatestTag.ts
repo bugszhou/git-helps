@@ -13,7 +13,12 @@ export default function queryLatestTag(params?: IQueryLatestTagParams) {
   const command = `git describe --tags --abbrev=0 ${
     params?.match ? `--match ${params?.match}` : ""
   }`;
-  const value = execa.commandSync(command);
+  try {
+    const value = execa.commandSync(command);
 
-  return value.stdout;
+    return value.stdout;
+  } catch (e) {
+    console.error("Not Found Git!");
+    return "";
+  }
 }
